@@ -1,0 +1,9 @@
+# Optional: evaluation dependencies.
+#   eval_metrics.py  -> CLIPScore / Aesthetic / ImageReward / HPS v2.1 / PickScore
+#   eval_fid_clip.py -> FID (clean-fid) / CLIP score (open_clip)
+scipy
+image-reward
+hpsv2
+clean-fid
+open_clip_torch
+# PickScore uses transformers AutoModel (covered by core requirements).

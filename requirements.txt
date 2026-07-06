@@ -1,0 +1,15 @@
+# Core dependencies (generation).
+# Tested combos: torch 2.5.1+cu121 / 2.6.0+cu124, Python 3.10.
+# Install torch first, matching your CUDA version, e.g.:
+#   pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cu121
+torch>=2.1
+# tested: 0.32.2 and 0.35.1
+diffusers>=0.32.2,<0.36
+# NOTE: if you use diffusers <= 0.32, transformers must be < 4.50
+# (newer transformers removed FLAX_WEIGHTS_NAME, which old diffusers imports at load time).
+transformers==4.46.3
+accelerate>=0.34
+safetensors
+tqdm
+Pillow
+numpy
